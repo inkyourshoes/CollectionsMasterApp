@@ -35,10 +35,12 @@ namespace CollectionsMasterConsoleUI
                 2) Second way, Create a custom method (scroll to bottom of page to find ⬇⬇⬇)
             */
             //Array.Reverse(numbers);
-
-            Console.WriteLine("All Numbers Reversed:");
-
-            Console.WriteLine("---------REVERSE CUSTOM------------");
+             
+            Console.WriteLine("Reversed Array: ");
+            foreach (var num in numbers)
+            {
+                Console.Write(num + " ");
+            }
 
             Console.WriteLine("-------------------");
 
@@ -46,6 +48,7 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("Multiple of three = 0: ");
             ThreeKiller(numbers);
             
+
 
             Console.WriteLine("-------------------");
 
@@ -204,6 +207,7 @@ namespace CollectionsMasterConsoleUI
         /// <param name="collection"></param>
         private static void NumberPrinter<T>(T collection) where T : IEnumerable<int>
         {
+            
             //STAY OUT DO NOT MODIFY!!
             foreach (var item in collection)
             {
