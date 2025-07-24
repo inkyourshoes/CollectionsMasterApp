@@ -28,6 +28,7 @@ namespace CollectionsMasterConsoleUI
             //UNCOMMENT this method to print out your numbers from arrays or lists
             NumberPrinter(numbers);
             Console.WriteLine("-------------------");
+            
 
             //TODO: Reverse the contents of the array and then print the array out to the console.
             //Try for 2 different ways
@@ -35,7 +36,8 @@ namespace CollectionsMasterConsoleUI
                 2) Second way, Create a custom method (scroll to bottom of page to find ⬇⬇⬇)
             */
             //Array.Reverse(numbers);
-             
+            ReverseArray(numbers);
+
             Console.WriteLine("Reversed Array: ");
             foreach (var num in numbers)
             {
